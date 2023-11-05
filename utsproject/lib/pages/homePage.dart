@@ -55,9 +55,14 @@ class HomePage extends StatelessWidget {
             child: Stack(
               children: <Widget>[
                 Container(
-                  color: Colors.red,
                   width: 400.0,
                   height: 150.0,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    gradient: const LinearGradient(
+                      colors: [Colors.black87, Colors.redAccent],
+                    ),
+                  ),
                   child: Column(
                     children: [
                       Container(
@@ -176,7 +181,268 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Container(
-
+            child: Stack(
+              children: [
+                Container(
+                  margin: const EdgeInsets.all(6),
+                  padding: const EdgeInsets.only(top: 13),
+                  width: 380.0,
+                  height: 80.0,
+                  decoration: BoxDecoration(
+                      color: Colors.grey[100],
+                      borderRadius: BorderRadius.circular(20)),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        child: Column(
+                          children: [
+                            Container(
+                              child: const Icon(
+                                Icons.add_card,
+                                size: 30.0,
+                              ),
+                            ),
+                            Container(
+                              child: const Text('TopUp'),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        child: Column(
+                          children: [
+                            Container(
+                              child: const Icon(
+                                Icons.send_to_mobile_outlined,
+                                size: 30.0,
+                              ),
+                            ),
+                            Container(
+                              child: const Text('Send Money'),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        child: Column(
+                          children: [
+                            Container(
+                              child: const Icon(
+                                Icons.adf_scanner_outlined,
+                                size: 30.0,
+                              ),
+                            ),
+                            Container(
+                              child: const Text('Ticket Code'),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        child: Column(
+                          children: [
+                            Container(
+                              child: const Icon(
+                                Icons.category_outlined,
+                                size: 30.0,
+                              ),
+                            ),
+                            Container(
+                              child: const Text('See All'),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.only(top: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Container(
+                  child: Column(
+                    children: [
+                      Container(
+                        child: const Icon(
+                          Icons.speaker_phone_outlined,
+                          size: 60,
+                          color: Colors.redAccent,
+                        ),
+                      ),
+                      Container(
+                        child: const Text(
+                          'Pulsa/Data',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    children: [
+                      Container(
+                        child: const Icon(
+                          Icons.electric_bolt,
+                          size: 60,
+                          color: Colors.redAccent,
+                        ),
+                      ),
+                      Container(
+                        child: const Text(
+                          'Electricity',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    children: [
+                      Container(
+                        child: const Icon(
+                          Icons.ballot_rounded,
+                          size: 60,
+                          color: Colors.redAccent,
+                        ),
+                      ),
+                      Container(
+                        child: const Text(
+                          'BPJS',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    children: [
+                      Container(
+                        child: const Icon(
+                          Icons.games_rounded,
+                          size: 60,
+                          color: Colors.redAccent,
+                        ),
+                      ),
+                      Container(
+                        child: const Text(
+                          'mGames',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.only(top: 40),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Container(
+                  child: Column(
+                    children: [
+                      Container(
+                        child: const Icon(
+                          Icons.settings_input_antenna,
+                          size: 60,
+                          color: Colors.redAccent,
+                        ),
+                      ),
+                      Container(
+                        child: const Text(
+                          'Cable TV',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    children: [
+                      Container(
+                        child: const Icon(
+                          Icons.water_drop_outlined,
+                          size: 60,
+                          color: Colors.redAccent,
+                        ),
+                      ),
+                      Container(
+                        child: const Text(
+                          'PDAM',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    children: [
+                      Container(
+                        child: const Icon(
+                          Icons.card_membership_outlined,
+                          size: 60,
+                          color: Colors.redAccent,
+                        ),
+                      ),
+                      Container(
+                        child: const Text(
+                          'Kartu Elektronik',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    children: [
+                      Container(
+                        child: const Icon(
+                          Icons.more_horiz,
+                          size: 60,
+                          color: Colors.redAccent,
+                        ),
+                      ),
+                      Container(
+                        child: const Text(
+                          'More',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
